@@ -1,0 +1,4 @@
+
+        @option[:traverseHost] = "bshe-zbve-c040.production.tvn.com"
+        @option[:serviceNow] = "https://www.service-now.com"
+
