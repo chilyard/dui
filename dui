@@ -33,7 +33,7 @@ $VERBOSE == "True"
 require_relative './httpdownloadcsv'
 require_relative './optparse'
 require_relative './user'
-require_relative './SSHHandler/SSHHandler'
+#require_relative './SSHHandler/SSHHandler'
 require_relative './config'
 
 ## create this empty hash, we'll check it later 
