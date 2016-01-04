@@ -9,7 +9,7 @@ class OpenSSHConnection
 		@target = target
 
 		# the array of passwords to test
-		@passwords = ["auroras","get8life","nu-AVAIL-pass","zyrion"]
+		@passwords = ["empty"]
 	end
 
 	def sshconnection

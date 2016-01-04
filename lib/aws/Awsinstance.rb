@@ -3,10 +3,6 @@
 require 'aws-sdk'
 require 'highline/import'
 
-ENV['AWS_ACCESS_KEY'] = "AKIAJKTV3B6PCB3WJDAA" 
-ENV['AWS_SECRET_ACCESS_KEY'] = "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"
-ENV['AWS_REGION'] = "us-west-2"
-
 region = "us-west-2"
 
 ec2 = Aws::EC2::Client.new(:region => region)
