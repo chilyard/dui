@@ -2,6 +2,9 @@
 
 ## description ##
 #
+# this is phase 2 implementation and will be a RoR app. 
+#
+# 
 # build environment tool to help the user report on and update systems in the environment. 
 #
 # this tool will report status on all machines or selected systems such that it's easy to determine
@@ -20,13 +23,18 @@
 ## configuration ## 
 # 
 # check config.rb for options
-$VERBOSE == "True"
 
-require_relative './httpdownloadcsv'
-require_relative './optparse'
-require_relative './user'
-#require_relative './SSHHandler/SSHHandler'
-require_relative './config'
+## load the required modules
+# require './reporting.rb'
+# require './puppet.rb'
+# require './cobbler.rb'
+# require './spacewalk.rb'
+# require './traverse.rb'
+# require './service-now.rb'
+# require './dns.rb'
+require './httpdownloadcsv.rb'
+require './optparse.rb'
+require './user.rb'
 
 ## create this empty hash, we'll check it later 
 ## to see what we're going to do.  if it's empty, exit
@@ -45,3 +53,8 @@ end
 ## load configs
 config = Configs.new()
 
+## call the downloader (pass the correct arg)
+#h = HttpDownloadCSV.new()
+
+#au = User.new()
+#au.add()

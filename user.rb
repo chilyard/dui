@@ -9,7 +9,7 @@ class User
         print "setting User variables\n"
     	@host = '10.0.2.15'
     	@user = 'chilyard'
-    	@pass = '123curly'
+    	@pass = '12345678'
     end
 
     ## add users
