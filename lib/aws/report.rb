@@ -2,6 +2,7 @@
 
 require 'aws-sdk'
 
+ENV['AWS_PROFILE'] = "chilyard2"
 
 ec2Client = Aws::EC2::Client.new(region: 'us-west-2')
 ec2Resource = Aws::EC2::Resource.new(client: ec2Client)

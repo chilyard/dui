@@ -3,6 +3,8 @@
 require 'aws-sdk'
 require 'highline/import'
 
+# keys are found in ~/.aws/credentials
+
 region = "us-west-2"
 
 ec2 = Aws::EC2::Client.new(:region => region)
