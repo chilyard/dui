@@ -12,7 +12,7 @@ ec2Resource = Aws::EC2::Resource.new(region: ENV['AWS_REGION'], client: ec2Clien
 
 
 ec2Resource.instances.each do |resp|
-	print "resp: #{resp.id}\n"
+	print "resp: #{resp.id} #{resp.tags} #{resp.ami_launch_index} \n"
 end
 
 
