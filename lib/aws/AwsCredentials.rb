@@ -9,6 +9,7 @@ class AwsCredentials
 		print "chilyard-dev\n"
 		print "chilyard-qa\n"
 		print "chilyard-stg\n"
+		print "chilyard-prod\n"
 		print "adm_chilyard\n"
 		print "enter username: "
 		$stdout.flush
