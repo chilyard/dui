@@ -6,7 +6,9 @@ class AwsCredentials
 
 	def initialize()
 		print "\n[available usernames]\n"
-		print "chilyard\n"
+		print "chilyard-dev\n"
+		print "chilyard-qa\n"
+		print "chilyard-stg\n"
 		print "adm_chilyard\n"
 		print "enter username: "
 		$stdout.flush
