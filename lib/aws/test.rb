@@ -16,10 +16,14 @@ ec2Client = Aws::EC2::Client.new(:credentials => $credentials)
 ec2Resource = Aws::EC2::Resource.new(region: ENV['AWS_REGION'], client: ec2Client)
 
 
-
 ec2Resource.instances.each do |instance|
 	line = instance.instance_id,instance.state.code,instance.state.name
-	line.each { |x| print x,"," };print "\n"
+	i = 0
+	while ( i < line.length )
+		print line[i],","
+		i += 1
+	end
+	print "\n"
 end
 
 

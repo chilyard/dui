@@ -18,10 +18,7 @@ ec2Resource = Aws::EC2::Resource.new(region: ENV['AWS_REGION'], client: ec2Clien
 
 
 ec2Resource.instances.each do |instance|
-    l_state = instance.state
-    print "l_code: ", l_state.code, "\n"
-    puts "l_name: ", l_state.name, "\n"
-
+    print ":", instance.data, "\n"
 end
 
 
