@@ -38,7 +38,7 @@ attachment=#<struct Aws::EC2::Types::InstanceNetworkInterfaceAttachment attachme
 ec2Resource.instances.each do |instance|
     print "id:", instance.instance_id, "\n"
     print "placement:", instance.placement.tenancy, "\n"
-    print "groups:", instance.groups[1], "\n"
+    print "groups:", instance.groups.group_name, "\n"
 
 	# pop the returned value on the array stack
 	# at the end, dump the array into a file object 
